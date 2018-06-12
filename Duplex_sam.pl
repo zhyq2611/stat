@@ -3,7 +3,7 @@ use strict;
 use Getopt::Long;
 =head1 Usage
 
-        perl ConSeqV2.1.pl [option] -i insam -o csssam -O allsam
+        perl Duplex_sam.pl [option] -i insam -o csssam -O allsam
 
 =head1 Arguments
 
