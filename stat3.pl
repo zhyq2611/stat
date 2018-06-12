@@ -184,10 +184,11 @@ if($ALK_alt_f >= $ALK_alt_m){
 	$ALK_depth_alt = $ALK_depth_alt_m;
 	$ALK_depth_ref = $ALK_depth_ref_m;
 }
-if($ALK_alt >= 3){
+if($ALK_alt >= 3 && $ALK_depth_alt > $ALK_alt){
 	$ALK = "Positive";
 }else{
 	$ALK_alt = 0;
+	$ALK_depth_alt = 0;
 }
 
 my $L858R_VAF = sprintf"%.2f",$L858R_alt*100/($L858R_alt + $L858R_ref);
