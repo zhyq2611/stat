@@ -141,7 +141,7 @@ my $EML4_ALK_start = 0;
 my $EML4_ALK_start_depth = 0;
 my $EML4_ALK_end = 0;
 my $EML4_ALK_end_depth = 0;
-open FL,"$altscan";
+open FL,"$altscan" or die $!;
 while(<FL>){
 	chomp;
         if($_ =~ /EGFR_L858R \((\d+) reads support, (\d+) unique\)/){
